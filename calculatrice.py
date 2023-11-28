@@ -1,8 +1,5 @@
-from tkinter import * # Tkinter
-
-#---------
-# CLASSE :
-#---------
+from tkinter import *
+6*
 class Calculator():
     def __init__(self): # Construction
         self.phase1 = 0 # Premier nombre
@@ -139,22 +136,17 @@ def ButtonC (): # Actionnerle bouton c
     calculatrice.entry.set("")
     calculatrice.init()
     
-#----------
-# FENETRE :
-#----------
+
 fen = Tk() # Création de a fenêtr 1e
 fen.geometry("200x240") # Définition de la fenêtre
 fen.title("Calculatrice v1.0") # Titre de la calculatrice
 fen["bg"]= "SkyBlue2" # Coleur de la fenêtre
 fen["relief"] = "raised" # Profondeur de la fenêtre
-#------------
-# PROGRAMME :
-#------------
+
 # Création instance
 calculatrice = Calculator()
 
-# ATTRIBUTS DE LA FENETRE
-#########################
+
 # // Ecran calculatrice //
 ECRAN = Entry(fen, width=28, textvariable=calculatrice.entry, bg ="black", fg="white", relief=SUNKEN, bd=5).place(x=9, y=8)
 
